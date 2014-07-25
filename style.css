@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+}
+.wrapper {
+  height: 800px;
+  width: 800px;
+  margin-left: 25%;
+}
+
+
+.cells {
+border: black ;
+width: 200px;
+height: 200px;
+float: left;
+color: white;
+font-size: 150px;
+text-align: center;
+border: 1px solid white;
+}
+
+.startlogo {
+  margin-left: 35%;
+  
+}
+
+.loadcontainer { 
+  width: 1300px;
+  height: 1200px;
+  
+}
+
+.load {
+  width: 1000px;
+  height: 625px;
+  margin-left: 14%
+}
+
+.char {
+  width: 1000px;
+  height: 625px;
+  margin-left: 14%
+}
+
+.mikey {
+  height: 385px;
+  width: 230px;
+  position: absolute;
+  top: 166px;
+  left: 455px;
+}
+
+
+.don {
+  height: 385px;
+  width: 230px;
+  position: absolute;
+  top: 166px;
+  left: 707px;
+
+}
+
+.raph {
+  height: 385px;
+  width: 230px;
+  position: absolute;
+  top: 166px;
+  left: 953px;
+
+}
+
+.leo {
+  height: 385px;
+  width: 230px;
+  position: absolute;
+  top: 166px;
+  left: 200px;
+}
+
+video {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  height: 625px;
+  width: 1000px;
+
+}
+
+
+/*.charselect {
+
+  background-image: "<img src='http://www.vizzed.com/vizzedboard/retro/user_screenshots/saves17/176647/TMNT22PU--Teenage%20Mutant%20Ninja%20Turtles%20%20Turtles%20in%20Time%202%20Players%20ver%20UDA_Oct3%2015_14_23.png'/>"
+}*/
+
+
+

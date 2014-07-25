@@ -2,19 +2,31 @@ body {
   background-color: black;
 }
 .wrapper {
-  height: 800px;
-  width: 800px;
-  margin-left: 25%;
+  height: 400px;
+  width: 400px;
+  float: left;
+
+}
+
+.wrapper2 {
+  height: 400px;
+  width: 400px; 
+  float: left; 
 }
 
 
+.wrapper3 {
+  height: 400px;
+  width: 400px;  
+  float: left;
+}
+
 .cells {
-border: black ;
-width: 200px;
-height: 200px;
+width: 100px;
+height: 100px;
 float: left;
 color: white;
-font-size: 150px;
+font-size: 75px;
 text-align: center;
 border: 1px solid white;
 }

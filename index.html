@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html ng-app="gameApp">
 <head>
+  <link rel="stylesheet" href="animate.css" />
   <link rel="stylesheet" href="style.css" />
+   
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.16/angular.js"></script>
+  <script src="animation.js"></script>
   <script src="script.js"></script>
    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
 
+
+
 </head>
   <body> 
+ 
   <div x-ng-controller="ticController" ng-model="gameContainer">
-<div class="loadcontainer" ng-click="select()" ng-if="(loader < 2)">
-   <!--    <div class="video"> <video controls autoplay> <source src="images/turtlescropped.mp4" type="video/mp4"> </video> </div>
-       -->
-      <img src="images/loadscreen.png" ng-class="{load:true}" ng-if="(loader == 0)"/>
-      <img src="{{charaimage}}" ng-class="{char: true}" ng-if="(loader == 1)"/>
+  <div class="loadcontainer" ng-click="select()" ng-if="(loader < 3)">
+      <div class="video" ng-if="(loader < 1)"> <video controls autoplay > <source src="images/turtlescropped.mp4" type="video/mp4"> </video> </div>
+      
+      <img src="images/loadscreen.png" ng-class="{load:true}" ng-if="(loader === 1)"/>
+      <div class="titlelogo" ng-if="(loader === 1)"> <img src="images/titlelogo.png" height="173px" width="756px"/> </div>
+      <img src="{{charaimage}}" ng-class="{char: true}" ng-if="(loader == 2)"/>
         <div class="mikey" ng-mouseover="mikeyf()" ng-click=""></div>
         <div class="don" ng-mouseover="donf()" ng-click=""></div>
         <div class="raph" ng-mouseover="raphf()" ng-click=""></div>
         <div class="leo" ng-mouseover="leof()" ng-click=""></div>
     </div>  
-   
-   <div class="startlogo"> <img src="images/logo.png" height="140px" width="350px"/> </div>
+        <img src="images/leoborder.gif" ng-class="{leoborder:true}"/>
+        <img src="images/raphborder.gif" ng-class="{raphborder:true}"/>
+        <div class="startlogo"> <img src="images/logo.png" height="140px" width="350px"/> </div>
+        <div id="charwrapper">
+         <div id="donatello"> </div>  
+          <div id="mikey"> </div> 
+       </div>
+         <div class="winscreen" ng-if="playerwin === 1"> 
+          <p>PLAYER 2 WINS!!!! </p>
+          <img src="images/mikewin.gif"/>
+          </div>
+          <div class="winscreen" ng-if="playerwin2 === 1 "> 
+          <p>PLAYER 2 Predicted Your Future! </p>
+          <img src="images/mikewin.gif"/>
+          </div>
     <div class="wrapper">
         <div class="cells" 
           x-ng-repeat="b in gameContainer.cellListArray track by $index" 
             x-ng-click="clicker($index)">
              {{ b }}
         </div>
+        <img src="images/mikeborder.gif" ng-class="{mikeborder:true}"/>
+        <img src="images/donborder.gif" ng-class="{donborder:true}"/>
     </div>
   </div>
-
-
-  <div class="wrapper2">
-  <div x-ng-controller="ticController2" ng-model="board">
-        <div class="cells" 
-          x-ng-repeat="b in gameContainer.cellListArray track by $index" 
-            x-ng-click="clicker($index)">
-             {{ b }}
-        </div>
-  </div>
-</div>
-  <div class="wrapper3">
-  <div x-ng-controller="ticController2" ng-model="board">
-        <div class="cells" 
-          x-ng-repeat="b in gameContainer.cellListArray track by $index" 
-            x-ng-click="clicker($index)">
-             {{ b }}
-        </div>
-  </div>
-</div>
+ 
   </body>
   
   </html>

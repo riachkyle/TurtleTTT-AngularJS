@@ -1,29 +1,21 @@
+@charset "UTF-8";
+
 body {
   background-color: black;
 }
 .wrapper {
-  height: 400px;
-  width: 400px;
+  height: 325px;
+  width: 700px;
   float: left;
-
+  margin-left: 28%;
 }
-
-.wrapper2 {
-  height: 400px;
-  width: 400px; 
-  float: left; 
-}
-
-
-.wrapper3 {
-  height: 400px;
-  width: 400px;  
-  float: left;
+.clear {
+  clear:both;
 }
 
 .cells {
-width: 100px;
-height: 100px;
+width: 150px;
+height: 82px;
 float: left;
 color: white;
 font-size: 75px;
@@ -32,8 +24,7 @@ border: 1px solid white;
 }
 
 .startlogo {
-  margin-left: 35%;
-  
+  margin-left: 37% 
 }
 
 .loadcontainer { 
@@ -45,15 +36,48 @@ border: 1px solid white;
 .load {
   width: 1000px;
   height: 625px;
-  margin-left: 14%
+  margin-left: 15%
 }
 
 .char {
   width: 1000px;
   height: 625px;
-  margin-left: 14%
+  margin-left: 15%
 }
 
+/*border screenshots===========================*/
+.leoborder {
+  width: 175px;
+  height: 333px;
+  position: absolute;
+  top: 0px; 
+  left:0px;
+}
+
+.raphborder {
+  width: 175px;
+  height: 333px;
+  position: absolute;
+  top: 333px;
+  left:0px;
+}
+
+.mikeborder {
+  width: 175px;
+  height: 333px;
+  position: absolute;
+  top: 0px;
+  left:1250px;
+}
+.donborder {
+  width: 175px;
+  height: 333px;
+  position: absolute;
+  top: 333px;
+  left:1250px;
+}
+
+/*character select screen===================*/
 .mikey {
   height: 385px;
   width: 230px;
@@ -92,17 +116,70 @@ border: 1px solid white;
 video {
   position: absolute;
   top: 15px;
-  left: 50px;
+  left: 120px;
   height: 625px;
-  width: 1000px;
+  width: 1200px;
 
 }
 
 
-/*.charselect {
+/*character gif animations===================================*/
+#charwrapper {
+  width: 400px;
+  height: 170px;
+  margin: 0 auto;
 
-  background-image: "<img src='http://www.vizzed.com/vizzedboard/retro/user_screenshots/saves17/176647/TMNT22PU--Teenage%20Mutant%20Ninja%20Turtles%20%20Turtles%20in%20Time%202%20Players%20ver%20UDA_Oct3%2015_14_23.png'/>"
-}*/
+}
 
+#donatello {
+ 
+  height: 125px;
+  width: 100px;
+  float: left;
+  margin-right: 170px;
+ 
+}
 
+#mikey {
+ height: 125px;
+ width: 100px; 
+ float: left;
+ -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
 
+/*win screens===============================*/
+.winscreen {
+  height: 550px;
+  width: 700px;
+  position: absolute;
+  top: 70px;
+  left:360px;
+  color: white;
+  font-size: 70px;
+  background-color: black;
+  border: 2px solid white;
+  text-align: center;
+
+}
+
+.winscreen img {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.titlelogo {
+  height: 173px;
+  width: 756px;
+  z-index: 2;
+  position:absolute;
+  top: 267px;
+  left: 333px;
+  -webkit-animation-name: bounceInDown 3s ease-in;
+   animation: bounceInDown 3s ease-in;
+}

@@ -1,0 +1,9 @@
+{
+  "firebase": "tmnt-ttt",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
